@@ -1,0 +1,11 @@
+{
+	"name": "Kyopro Docker",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "kyopro",
+	"workspaceFolder": "/kyopro",
+	"customizations": {
+		"vscode": {
+			"extensions": [],
+		}
+	}
+}

@@ -1,0 +1,9 @@
+services:
+  kyopro:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./source:/kyopro
+    working_dir: /kyopro
+    command: sleep infinity
