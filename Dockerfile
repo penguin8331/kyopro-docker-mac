@@ -21,7 +21,7 @@ RUN apt-get install -y g++-12 libgmp3-dev \
 
 # Development tools
 RUN apt-get install -y git python3 python3-pip
-RUN pip3 install online-judge-tools
+RUN pip3 install online-judge-tools online-judge-verify-helper
 
 # Add non-root user
 ARG USERNAME
