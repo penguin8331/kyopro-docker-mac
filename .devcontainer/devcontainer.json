@@ -6,7 +6,12 @@
 	"remoteUser": "penguin8331",
 	"customizations": {
 		"vscode": {
-			"extensions": []
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"ms-vscode.cpptools",
+				"formulahendry.code-runner",
+			]
 		}
 	}
 }
