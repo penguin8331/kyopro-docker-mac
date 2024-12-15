@@ -10,7 +10,7 @@
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
 				"ms-vscode.cpptools",
-				"formulahendry.code-runner",
+				"formulahendry.code-runner"
 			]
 		}
 	}
