@@ -2,10 +2,11 @@
 	"name": "Kyopro Docker",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "kyopro",
-	"workspaceFolder": "/kyopro",
+	"workspaceFolder": "/home/penguin8331/kyopro/source",
+	"remoteUser": "penguin8331",
 	"customizations": {
 		"vscode": {
-			"extensions": [],
+			"extensions": []
 		}
 	}
 }

@@ -3,7 +3,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        USERNAME: penguin8331
+        USER_UID: 1000
+        USER_GID: 1000
     volumes:
-      - ./source:/kyopro
-    working_dir: /kyopro
+      - ./source:/home/penguin8331/kyopro
+    working_dir: /home/penguin8331/kyopro/source
+    user: penguin8331
     command: sleep infinity

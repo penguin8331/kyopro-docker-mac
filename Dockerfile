@@ -20,15 +20,15 @@ RUN apt-get install -y g++-12 libgmp3-dev \
     && apt-get install -y libeigen3-dev=3.4.0-2ubuntu2
 
 # Development tools
-RUN apt-get install -y python3 python3-pip
+RUN apt-get install -y git python3 python3-pip
 RUN pip3 install online-judge-tools
 
 # Add non-root user
-# ARG USERNAME=penguin8331
-# ARG USER_UID=1000
-# ARG USER_GID=$USER_UID
-# RUN groupadd --gid $USER_GID $USERNAME \
-#     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-#     && apt-get install -y sudo \
-#     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-#     && chmod 0440 /etc/sudoers.d/$USERNAME
+ARG USERNAME
+ARG USER_UID
+ARG USER_GID
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
