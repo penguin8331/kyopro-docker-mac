@@ -2,5 +2,6 @@
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
         "cpp": "cd $dir && sh run.sh $fileName",
-    }
+    },
+    "code-runner.customCommand": "cd $dir && oj-bundle $fileName >submission.cpp 2>/dev/null"
 }

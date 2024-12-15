@@ -60,4 +60,4 @@ if [ $? -ne 0 ]; then
 fi
 
 # Submit
-oj s ${problemURL} ${fileName}
+oj s ${problemURL} submission.cpp
