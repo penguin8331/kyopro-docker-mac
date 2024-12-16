@@ -10,6 +10,6 @@ services:
     volumes:
       - ./:/home/penguin8331/kyopro
       - ~/.local/share/online-judge-tools/cookie.jar:/home/penguin8331/.local/share/online-judge-tools/cookie.jar
-    working_dir: /home/penguin8331/kyopro/source
+    working_dir: /home/penguin8331/kyopro/workspace
     user: penguin8331
     command: /bin/bash -c "sleep infinity"

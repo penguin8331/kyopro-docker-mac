@@ -2,7 +2,7 @@
 	"name": "Kyopro Docker",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "kyopro",
-	"workspaceFolder": "/home/penguin8331/kyopro/source",
+	"workspaceFolder": "/home/penguin8331/kyopro/workspace",
 	"remoteUser": "penguin8331",
 	"customizations": {
 		"vscode": {
