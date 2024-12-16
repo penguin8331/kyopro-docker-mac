@@ -12,4 +12,4 @@ services:
       - ~/.local/share/online-judge-tools/cookie.jar:/home/penguin8331/.local/share/online-judge-tools/cookie.jar
     working_dir: /home/penguin8331/kyopro/source
     user: penguin8331
-    command: sleep infinity
+    command: /bin/bash -c "sleep infinity"
