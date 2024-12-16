@@ -7,6 +7,7 @@ fileName=$1
 g++-12 -std=gnu++2b -g -O0 -DLOCAL \
     -fsanitize=undefined,address \
     -I/opt/ac-library -I/opt/boost/gcc/include -L/opt/boost/gcc/lib \
+    -I./library/dump \
     -o a.out $fileName \
     -lgmpxx -lgmp \
     -I/usr/include/eigen3

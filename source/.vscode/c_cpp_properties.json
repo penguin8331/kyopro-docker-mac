@@ -3,7 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
+                "./library/dump",
                 "/opt/ac-library",
                 "/opt/boost/gcc/include",
                 "/usr/include/eigen3"
