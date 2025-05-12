@@ -16,7 +16,7 @@
             ],
             "compilerPath": "/usr/bin/g++-12",
             "cppStandard": "gnu++23",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "linux-gcc-arm64"
         }
     ],
     "version": 4
