@@ -23,11 +23,12 @@ RUN unzip /tmp/ac-library.zip -d /opt/ac-library
 # boost
 RUN apt install -y build-essential
 # RUN wget https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.gz -O boost_1_82_0.tar.gz
-# RUN tar xf boost_1_82_0.tar.gz
-# RUN cd boost_1_82_0
-# RUN ./bootstrap.sh --with-toolset=gcc --without-libraries=mpi,graph_parallel
-# RUN ./b2 -j3 toolset=gcc variant=release link=static runtime-link=static cxxflags="-std=c++2b" stage
-# RUN ./b2 -j3 toolset=gcc variant=release link=static runtime-link=static cxxflags="-std=c++2b" --prefix=/opt/boost/gcc install
+RUN wget https://archives.boost.io/release/1.82.0/source/boost_1_82_0.tar.gz -O boost_1_82_0.tar.gz
+RUN tar xf boost_1_82_0.tar.gz
+WORKDIR /tmp/boost_1_82_0
+RUN ./bootstrap.sh --with-toolset=gcc --without-libraries=mpi,graph_parallel
+RUN ./b2 -j3 toolset=gcc variant=release link=static runtime-link=static cxxflags="-std=c++2b" stage
+RUN ./b2 -j3 toolset=gcc variant=release link=static runtime-link=static cxxflags="-std=c++2b" --prefix=/opt/boost/gcc install
 
 # Eigen
 RUN apt install -y libeigen3-dev=3.4.0-2ubuntu2
