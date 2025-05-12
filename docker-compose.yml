@@ -9,7 +9,7 @@ services:
         USER_GID: 1000
     volumes:
       - ./:/home/penguin8331/kyopro
-      - ~/.local/share/online-judge-tools/cookie.jar:/home/penguin8331/.local/share/online-judge-tools/cookie.jar
+      # - ~/.local/share/online-judg/e-tools/cookie.jar:/home/penguin8331/.local/share/online-judge-tools/cookie.jar
     working_dir: /home/penguin8331/kyopro/workspace
     user: penguin8331
     command: /bin/bash -c "sleep infinity"

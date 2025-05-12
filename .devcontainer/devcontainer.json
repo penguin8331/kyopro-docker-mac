@@ -1,5 +1,5 @@
 {
-	"name": "Kyopro Docker",
+	"name": "kyopro-docker",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "kyopro",
 	"workspaceFolder": "/home/penguin8331/kyopro/workspace",

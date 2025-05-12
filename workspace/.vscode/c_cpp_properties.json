@@ -15,7 +15,6 @@
                 "LOCAL"
             ],
             "compilerPath": "/usr/bin/g++-12",
-            "cStandard": "gnu23",
             "cppStandard": "gnu++23",
             "intelliSenseMode": "linux-gcc-x64"
         }
