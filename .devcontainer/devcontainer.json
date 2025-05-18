@@ -1,9 +1,9 @@
 {
 	"name": "kyopro-docker",
-	"dockerComposeFile": "../docker-compose.yml",
-	"service": "kyopro",
-	"workspaceFolder": "/home/penguin8331/kyopro/workspace",
-	"remoteUser": "penguin8331",
+	"build": {
+		"context": ".",
+		"dockerfile": "Dockerfile"
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -13,5 +13,7 @@
 				"formulahendry.code-runner"
 			]
 		}
-	}
+	},
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached"
 }

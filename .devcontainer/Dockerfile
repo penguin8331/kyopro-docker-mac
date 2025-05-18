@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
 RUN apt update -y \
     && apt install -y wget unzip
@@ -37,10 +37,3 @@ RUN apt install -y libeigen3-dev=3.4.0-2ubuntu2
 # Development tools
 RUN apt install -y git gdb python3 python3-pip
 RUN pip install online-judge-tools online-judge-verify-helper
-
-# Add non-root user
-ARG USERNAME
-ARG USER_UID
-ARG USER_GID
-RUN groupadd --gid $USER_GID $USERNAME \
-    && useradd -m -s /bin/bash -u $USER_UID -g $USER_GID $USERNAME
