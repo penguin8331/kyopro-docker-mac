@@ -4,8 +4,19 @@
 		"context": ".",
 		"dockerfile": "Dockerfile"
 	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"installOhMyZsh": "true",
+			"installOhMyZshConfig": "true"
+		}
+	},
+	"postCreateCommand": "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-\"$HOME/.oh-my-zsh/custom\"}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-\"$HOME/.oh-my-zsh/custom\"}/plugins/zsh-syntax-highlighting && git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-\"$HOME/.oh-my-zsh/custom\"}/plugins/zsh-completions && sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)/' ~/.zshrc",
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			},
 			"extensions": [
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
