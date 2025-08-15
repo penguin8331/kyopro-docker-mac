@@ -3,15 +3,12 @@
         {
             "name": "Linux",
             "includePath": [
-                "./library/dump",
                 "/opt/ac-library",
                 "/opt/boost/gcc/include",
+                "${workspaceFolder}/library/dump",
                 "/usr/include/eigen3"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE",
                 "LOCAL"
             ],
             "compilerPath": "/usr/bin/g++-12",

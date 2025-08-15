@@ -1,5 +1,5 @@
 {
-	"name": "kyopro-docker",
+	"name": "kyopro-docker-mac",
 	"build": {
 		"context": ".",
 		"dockerfile": "Dockerfile"
