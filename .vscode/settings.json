@@ -3,5 +3,6 @@
     "code-runner.executorMap": {
         "cpp": "cd $workspaceRoot && sh run.sh $fileName",
     },
-    "code-runner.customCommand": "cd $workspaceRoot && oj-bundle $fileName >submission.cpp 2>/dev/null"
+    "code-runner.customCommand": "cd $workspaceRoot && oj-bundle $fileName >submission.cpp 2>/dev/null",
+    "editor.suggest.snippetsPreventQuickSuggestions": true
 }
